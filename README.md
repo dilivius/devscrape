@@ -33,6 +33,7 @@ sc.get_course_completion_percentage
 
 **Output:**
 
+```
 # >> Course: JavaScript - Javascript IconJavaScript 100% - Percent Complete: 100
 # >> Course: HTML - Web IconHTML & CSS100% - Percent Complete: 100
 # >> Course: Command Line - Command LineLearn the Command Line100% - Percent Complete: 100
@@ -43,6 +44,7 @@ sc.get_course_completion_percentage
 # >> Course: JQuery - JQuery IconjQuery100% - Percent Complete: 100
 # >> Course: AngularJS - Angular JSLearn AngularJS 1.X100% - Percent Complete: 100
 # >> Course: JavaScript - Javascript IconLearn JavaScript100% - Percent Complete: 100
+```
 
 
 ## Development
