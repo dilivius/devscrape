@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/devscrape.svg)](https://badge.fury.io/rb/devscrape)
+
 # Devscrape
 
 Utilize the Devscrape gem to get progress updates on popular coding sites, right now the sites that are supported are:
