@@ -1,8 +1,9 @@
 # Devscrape
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/devscrape`. To experiment with that code, run `bin/console` for an interactive prompt.
+Utilize the Devscrape gem to get progress updates on popular coding sites, right now the sites that are supported are:
 
-TODO: Delete this and the text above, and describe your gem
+- CodeCademy
+
 
 ## Installation
 
@@ -20,9 +21,29 @@ Or install it yourself as:
 
     $ gem install devscrape
 
+
 ## Usage
 
-TODO: Write usage instructions here
+### Example
+
+```ruby
+sc = Scraper::Codecademy.new(email: 'your@email.com', password: 'password')
+sc.get_course_completion_percentage
+```
+
+**Output:**
+
+# >> Course: JavaScript - Javascript IconJavaScript 100% - Percent Complete: 100
+# >> Course: HTML - Web IconHTML & CSS100% - Percent Complete: 100
+# >> Course: Command Line - Command LineLearn the Command Line100% - Percent Complete: 100
+# >> Course: Ruby IconRuby - Ruby IconRuby100% - Percent Complete: 100
+# >> Course: Rails IconLearn Ruby - Rails IconLearn Ruby on Rails100% - Percent Complete: 100
+# >> Course: Git - Git IconLearn Git100% - Percent Complete: 100
+# >> Course: Sass - SassLearn Sass100% - Percent Complete: 100
+# >> Course: JQuery - JQuery IconjQuery100% - Percent Complete: 100
+# >> Course: AngularJS - Angular JSLearn AngularJS 1.X100% - Percent Complete: 100
+# >> Course: JavaScript - Javascript IconLearn JavaScript100% - Percent Complete: 100
+
 
 ## Development
 
