@@ -5,11 +5,11 @@ require 'mechanize'
 module Scraper
 
   class Codecademy
-    def initialize(email:, password:)
+    def initialize(email:, password:, *courses)
       @agent = Mechanize.new
       @email = email
       @password = password
-      @courses = ['HTML', 'JavaScript', 'Command Line', 'Ruby IconRuby', 'Rails IconLearn Ruby', 'Git', 'JQuery', 'Sass', 'AngularJS']
+      @courses = courses
     end
 
     def access_site
