@@ -27,23 +27,17 @@ Or install it yourself as:
 ### Example
 
 ```ruby
-sc = Scraper::Codecademy.new(email: 'your@email.com', password: 'password')
+sc = Scraper::Codecademy.new('HTML', 'JavaScript', 'Command Line', 'Ruby', 'Rails', 'Git', email: 'email@example.com', password: 'password')
 sc.get_course_completion_percentage
 ```
 
 **Output:**
 
 ```
-# >> Course: HTML - Web IconHTML & CSS100% - Percent Complete: 100
-# >> Course: Command Line - Command LineLearn the Command Line100% - Percent Complete: 100
-# >> Course: Ruby IconRuby - Ruby IconRuby100% - Percent Complete: 100
-# >> Course: Rails IconLearn Ruby - Rails IconLearn Ruby on Rails100% - Percent Complete: 100
-# >> Course: Git - Git IconLearn Git100% - Percent Complete: 100
-# >> Course: Sass - SassLearn Sass100% - Percent Complete: 100
-# >> Course: JQuery - JQuery IconjQuery100% - Percent Complete: 100
-# >> Course: AngularJS - Angular JSLearn AngularJS 1.X100% - Percent Complete: 100
-# >> Course: JavaScript - Javascript IconLearn JavaScript100% - Percent Complete: 100
+ => {"JavaScript"=>"100", "HTML"=>"100", "Command Line"=>"100", "Ruby"=>"100", "Rails"=>"100", "Git"=>"100"}
 ```
+
+For clarification, during initialization you pass in the full list of courses that you want to check on, followed by the email and password *(as keyword arguments)*. The `get_course_completion_percentage` method will return an object that has the key of the course and the percent complete as the value.
 
 
 ## Development
