@@ -5,7 +5,7 @@ require 'mechanize'
 module Scraper
 
   class Codecademy
-    def initialize(email:, password:, *courses)
+    def initialize(*courses, email:, password:)
       @agent = Mechanize.new
       @email = email
       @password = password
