@@ -34,15 +34,19 @@ module Scraper
     end
 
     def match_link_to_courses
+      course_hash = {}
+
       @links.each do |link_text|
         @courses.each do |course|
 
           if (link_text.to_s.include?(course)) && (link_text.to_s =~ /\d+/)
-            puts "Course: #{course} - #{link_text.to_s} - Percent Complete: #{link_text.to_s.scan(/\d+/).last}"
+            course_hash[course] = link_text.to_s.scan(/\d+/).last
           end
 
         end
       end
+
+      course_hash
     end
 
     def get_course_completion_percentage
