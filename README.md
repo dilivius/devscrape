@@ -34,7 +34,6 @@ sc.get_course_completion_percentage
 **Output:**
 
 ```
-# >> Course: JavaScript - Javascript IconJavaScript 100% - Percent Complete: 100
 # >> Course: HTML - Web IconHTML & CSS100% - Percent Complete: 100
 # >> Course: Command Line - Command LineLearn the Command Line100% - Percent Complete: 100
 # >> Course: Ruby IconRuby - Ruby IconRuby100% - Percent Complete: 100
